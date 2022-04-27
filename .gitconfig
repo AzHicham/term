@@ -1,0 +1,13 @@
+[user]
+	email = hicham.azimani1@gmail.com
+	name = Hicham
+	signingKey = NA
+[commit]
+	gpgSign = true
+[tag]
+	forceSignAnnotated = true
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
